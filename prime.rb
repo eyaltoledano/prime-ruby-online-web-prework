@@ -9,14 +9,14 @@
 
 def prime?(number)
  # return false if number is not a whole number
- return false if !number.digit?
+ return false if !number.integer?
 
  # return false if number is under 2
  return false if number < 2
 
  # return false if the number can be divided evenly by any number preceding the number
  (2..number-1).each {|digit| return false if digit % number == 0}
- 
+
  # returns true if the number cannot be divided evenly by any number preceding it
  true
 end
