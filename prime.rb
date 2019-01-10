@@ -18,5 +18,5 @@ def prime?(number)
  (2..number-1).each {|digit| return true if digit % number == 0}
 
  # returns true if the number cannot be divided evenly by any number preceding it
- false
+ true
 end
